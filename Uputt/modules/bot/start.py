@@ -2,7 +2,7 @@
 #Thanks To All Dev
 
 
-from meliodas import app
+from Uputt import app
 from pyrogram import filters
 
 
