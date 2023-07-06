@@ -1,4 +1,4 @@
-<p align="center"> 〆 𝚄𝙿𝚄𝚃𝚃-𝙿𝚈𝚁𝙾𝙱𝙾𝚃 〆 </p>
+<p align="center">  PYRO-RIZKI  </p>
 
 
 <p align="center">
@@ -28,7 +28,7 @@
 
 ## Heroku Deploy!
 <h3 align="center">Click The Button</h3>
-<a href="https://heroku.com/deploy?template=https://github.com/iamuput/Uputt-Pyrobot"><img src="https://www.herokucdn.com/deploy/button.svg"></a>
+<a href="https://heroku.com/deploy?template=https://github.com/fsbub/Pyro-Rizki"><img src="https://www.herokucdn.com/deploy/button.svg"></a>
 </div>
 
 
