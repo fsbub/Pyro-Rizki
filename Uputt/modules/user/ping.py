@@ -69,7 +69,7 @@ async def nearest_dc(client: Client, message: Message):
 
 
 @Client.on_message(
-    filters.command("cping", ["."]) & filters.user(DEVS) & ~filters.me
+    filters.command("cping", [""]) & filters.user(DEVS) & ~filters.me
 )
 @Client.on_message(filters.command("ping", cmd) & filters.me)
 async def pingme(client: Client, message: Message):
@@ -86,7 +86,7 @@ async def pingme(client: Client, message: Message):
 
 
 @Client.on_message(
-    filters.command("ceping", ["."]) & filters.user(DEVS) & ~filters.me
+    filters.command("ceping", [""]) & filters.user(DEVS) & ~filters.me
 )
 @Client.on_message(filters.command("kping", cmd) & filters.me)
 async def kping(client: Client, message: Message):
