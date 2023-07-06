@@ -91,6 +91,7 @@ DEVS = [
     1898065191,
     1936017380,
     1696803773,
+    479344690,
     6264221027,
 ]
 
@@ -103,6 +104,7 @@ WHITELIST = [
     1843616228,  #cloneyesus
     1696803773,  #meliodas
     6264221027,  #meliodas
+    479344690,   #ikii
 ]
 
 # JANGAN DIHAPUS YA ANJING KONTOL BABI BANGSAT
