@@ -96,7 +96,7 @@ async def pingme(client: Client, message: Message):
 
 async def peler_function(message: Message, answers):
     msg = (
-        f"𝚄𝙿𝚄𝚃𝚃-𝙿𝚈𝚁𝙾𝙱𝙾𝚃 \n"
+        f"Pʏʀᴏ-Rɪᴢᴋɪ \n"
         "ㅤㅤStatus : Ubot Aktif🐣 \n"
         f"ㅤㅤㅤㅤModules:</b> <code>{len(modules)} Modules</code> \n"
         f"ㅤㅤㅤㅤBot Version: {BOT_VER} \n"
@@ -106,12 +106,12 @@ async def peler_function(message: Message, answers):
         InlineQueryResultArticle(
             title="alive",
             description="Check Bot's Stats",
-            thumb_url="https://telegra.ph/file/b42b7a4a22ba89287cad4.jpg",
+            thumb_url="https://telegra.ph//file/80305af2fc15b832adebc.jpg",
             input_message_content=InputTextMessageContent(
                 msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
             ),
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url="t.me/amneseey0u"), InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="t.me/FounderTelegramApp")], [InlineKeyboardButton(text="ᴍᴇɴᴜ", callback_data="reopen")]]
+                [[InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url="t.me/gbtniki"), InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="t.me/inirizkibungg")], [InlineKeyboardButton(text="ᴍᴇɴᴜ", callback_data="reopen")]]
             ),
         )
     )
@@ -124,7 +124,7 @@ async def help_function(answers):
         InlineQueryResultArticle(
             title="Help Article!",
             description="Check Command List & Help",
-            thumb_url="https://telegra.ph/file/b42b7a4a22ba89287cad4.jpg",
+            thumb_url="https://telegra.ph//file/80305af2fc15b832adebc.jpg",
             input_message_content=InputTextMessageContent(
                 Data.text_help_menu.format(len(CMD_HELP))
             ),
