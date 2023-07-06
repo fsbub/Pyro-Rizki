@@ -33,13 +33,13 @@ from .help import add_command_help
 
 modules = CMD_HELP
 alive_logo = (
-    gvarstatus("ALIVE_LOGO") or ""
+    gvarstatus("ALIVE_LOGO") or "https://telegra.ph//file/80305af2fc15b832adebc.jpg"
 )
 emoji = gvarstatus("ALIVE_EMOJI") or "🐣"
 alive_text = gvarstatus("ALIVE_TEKS_CUSTOM") or "Anu☺"
 
 
-@Client.on_message(filters.command(["alip", "awake"], cmd) & filters.me)
+@Client.on_message(filters.command(["alive", "awake"], cmd) & filters.me)
 async def alip(client: Client, message: Message):
     Uputt = await edit_or_reply(message, "🥵")
     await asyncio.sleep(2)
