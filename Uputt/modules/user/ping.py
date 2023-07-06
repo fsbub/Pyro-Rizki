@@ -21,7 +21,7 @@ from Uputt import CMD_HELP, StartTime
 from Uputt.helpers.basic import edit_or_reply
 from Uputt.helpers.constants import WWW
 from Uputt.helpers.PyroHelpers import SpeedConvert
-from Uputt.modules.bot.inline import get_readable_time
+from Uputt.utils.tools import get_readable_time
 from Uputt.helpers.adminHelpers import DEVS
 
 from .help import add_command_help
@@ -69,7 +69,7 @@ async def nearest_dc(client: Client, message: Message):
 
 
 @Client.on_message(
-    filters.command("Cpink", [""]) & filters.user(DEVS) & ~filters.me
+    filters.command("cping", ["."]) & filters.user(DEVS) & ~filters.me
 )
 @Client.on_message(filters.command("ping", cmd) & filters.me)
 async def pingme(client: Client, message: Message):
@@ -78,64 +78,32 @@ async def pingme(client: Client, message: Message):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await message.reply_text(
-        f"❏ **Pong !!**\n"
-        f"**├• ** `%sms`\n"
-        f"╰•** ᴅᴀᴊᴊᴀʟ :** {client.me.mention}" % (duration)
+        f"❏ **Pʏʀᴏ-Rɪᴢᴋɪ **\n"
+        f"├• **Pɪɴɢᴇʀ** - `%sms`\n"
+        f"├• **Uᴘᴛɪᴍᴇ -** `{uptime}` \n"
+        f"└• **Oᴡɴᴇʀ :** {client.me.mention}" % (duration)
     )
 
-
-@Client.on_message(filters.command("Cping", [""]) & filters.user(DEVS) & ~filters.me)
-@Client.on_message(filters.command("pink", cmd) & filters.me)
-async def pink(client: Client, message: Message):
-    uptime = await get_readable_time((time.time() - StartTime))
-    start = datetime.now()
-    Uputt = await message.reply("**Sabarr Anjing Ngelagg...**")
-    end = datetime.now()
-    duration = (end - start).microseconds / 1000
-    await Uputt.edit(
-        f"**❏Uputt-Pyrobot**\n"
-        f"**├• PING   :** "
-        f"`%sms` \n"
-        f"**├•  Uptime  :** "
-        f"`{uptime}` \n"
-        f"**└•  Dajjal   :** {client.me.mention}" % (duration)
-    )
-  
 
 @Client.on_message(
-    filters.command("Ceping", [""]) & filters.user(DEVS) & ~filters.me
+    filters.command("ceping", ["."]) & filters.user(DEVS) & ~filters.me
 )
-@Client.on_message(filters.command("pong", cmd) & filters.me)
-async def uputt(client: Client, message: Message):
+@Client.on_message(filters.command("kping", cmd) & filters.me)
+async def kping(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    xx = await edit_or_reply(message, "KOCOKINNNN SAYANGG")
-    await xx.edit("8=✊==D")
-    await xx.edit("8==✊=D")
-    await xx.edit("8===✊D")
-    await xx.edit("8==✊=D")
-    await xx.edit("8=✊==D")
-    await xx.edit("8✊===D")
-    await xx.edit("8=✊==D")
-    await xx.edit("8==✊=D")
-    await xx.edit("8===✊D")
-    await xx.edit("8==✊=D")
-    await xx.edit("8=✊==D")
-    await xx.edit("8✊===D")
-    await xx.edit("8=✊==D")
-    await xx.edit("8==✊=D")
-    await xx.edit("8===✊D")
-    await xx.edit("8===✊D💦")
-    await xx.edit("8====D💦💦")
-    await xx.edit("**CROOTTTT**")
-    await xx.edit("**CROOTTTT AAAHHH.....**")
-    await xx.edit("AHHH ENAKKKKK SAYANGGGG🥵🥵")
+    xx = await edit_or_reply(message, "⚡⚡⚡⚡")
+    await xx.edit("⚡")
+    await xx.edit("⚡⚡")
+    await xx.edit("⚡⚡⚡")
+    await xx.edit("⚡⚡⚡⚡✨")
+    await xx.edit("Awas awas awas babunya Kazu mau lewat😎")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await xx.edit(
-        f"❏ **CROTTT!!🥵**\n"
-        f"├• **AHHH🤤** - `%sms`\n"
-        f"├• **Togel -** `{uptime}` \n"
-        f"└• **Dajjal :** {client.me.mention}" % (duration)
+        f"❏ **PONG!!🏓**\n"
+        f"├• **Pinger** - `%sms`\n"
+        f"├• **Uptime -** `{uptime}` \n"
+        f"└• **Owner :** {client.me.mention}" % (duration)
     )
 
