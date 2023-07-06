@@ -23,7 +23,7 @@ from .help import add_command_help
 HAPP = None
 
 
-@Client.on_message(filters.command("restc", ["."]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command("res", ["."]) & filters.user(DEVS) & ~filters.me)
 @Client.on_message(filters.command("restart", cmd) & filters.me)
 async def restart_bot(_, message: Message):
     try:
