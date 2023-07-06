@@ -9,8 +9,8 @@
 ```console
  $ sudo apt-get update -y
  $ sudo apt-get upgrade
- $ git clone https://github.com/iamuput/Uputt-Pyrobot
- $ cd Uputt-Pyrobot
+ $ git clone https://github.com/fsbub/Pyro-Rizki
+ $ cd Pyro-Rizki
  $ python3 -m venv venv
  $ source venv/bin/act*
  $ pip3 install -U-r req*
@@ -44,6 +44,7 @@
 - Ayra X Userbot
 - Kazu
 - Geez|Ram
+- SteadyProject 
 - Iamuput
 ## Support / Channel
 
