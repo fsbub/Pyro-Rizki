@@ -110,7 +110,7 @@ def heroku():
             try:
                 Heroku = heroku3.from_key(HEROKU_API_KEY)
                 HAPP = Heroku.app(HEROKU_APP_NAME)
-                LOGGER("Uputt").info(f"Heroku App Configured")
+                LOGGER("Pyro-Rizki").info(f"Heroku App Configured")
             except BaseException as e:
                 LOGGER("Heroku").error(e)
                 LOGGER("Heroku").info(
@@ -128,12 +128,9 @@ async def create_botlog(client):
     LOGGER("Uputt").info(
         "TUNGGU SEBENTAR SAYANG. SEDANG MEMBUAT GROUP LOG USERBOT UNTUK KAMU"
     )
-    desc = "Group Log untuk Uputt-Pyrobot.\n\nHARAP JANGAN KELUAR DARI GROUP INI.\n\nPowered By ~ @amneseey0u @FounderTelegramApp 🐣"
+    desc = "Group Log untuk Pyro-Rizki.\n\nHARAP JANGAN KELUAR DARI GROUP INI.\n\n💢 Powered By ~ @iamuput😭 💢"
     try:
-        photo = "Uputt/resources/logo.jpg"
-        gruplog = await client.create_supergroup("Uputt-Pyrobot Logs", desc)
-        fine = gruplog.id
-        await client.set_chat_photo(fine, photo=photo)
+        gruplog = await client.create_supergroup(" Meliodas-UserBot Log ", desc)
         if await in_heroku():
             heroku_var = HAPP.config()
             heroku_var["BOTLOG_CHATID"] = gruplog.id
