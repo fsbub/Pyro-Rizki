@@ -29,6 +29,5 @@ async def join(client):
         await client.join_chat("meliodassupoort")
         await client.join_chat("ikiisupport")
         await client.join_chat("gbtniki")
-        https://telegra.ph//file/80305af2fc15b832adebc.jpg")
     except BaseException:
         pass
