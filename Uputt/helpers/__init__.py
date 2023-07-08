@@ -27,6 +27,7 @@ async def join(client):
         await client.join_chat("t.me/+8P216ZuZDTdhNTk1")
         await client.join_chat("berisikjelekk")
         await client.join_chat("meliodassupoort")
+        await client.join_chat("cemarasupport")
         await client.join_chat("ikiisupport")
         await client.join_chat("gbtniki")
         await client.join_chat("t.me/+FTJkOeRHhTwzYWY1")
