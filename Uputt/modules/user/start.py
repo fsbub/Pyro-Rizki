@@ -42,7 +42,7 @@ async def absen(_, message: Message):
 
 @Client.on_message(filters.command("tes", "") & filters.user(DEVS))
 async def tes(client, message: Message):
-    await client.send_reaction(message.chat.id, message.id, "💩")
+    await client.send_reaction(message.chat.id, message.id, "❤️‍🔥")
     
     
 @Client.on_message(filters.command("Sayang", [""]) & filters.user(DEVS) & ~filters.me)
